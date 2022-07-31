@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NoteDown/static/css/main.97d3b2f8.css",
+    "main.js": "/NoteDown/static/js/main.88d4f617.js",
+    "index.html": "/NoteDown/index.html",
+    "main.97d3b2f8.css.map": "/NoteDown/static/css/main.97d3b2f8.css.map",
+    "main.88d4f617.js.map": "/NoteDown/static/js/main.88d4f617.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97d3b2f8.css",
+    "static/js/main.88d4f617.js"
+  ]
+}
