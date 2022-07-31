@@ -1,0 +1,187 @@
+body {
+  /* background-image: linear-gradient(120deg, #f5cb42, #f08c70); */
+  background-color: orange;
+}
+
+.navbar {
+  margin: 0;
+  padding: 2px;
+  overflow: hidden;
+  background-color: black;
+  list-style: none;
+}
+
+.routes {
+  float: left;
+}
+
+.routes {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.deco {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+
+}
+
+.deco:hover {
+  background-color: rgb(246, 115, 0);
+  color: black;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+
+.heading {
+  display: flex;
+  margin-top: 7rem;
+  font-size: 3rem;
+  justify-content: center;
+  color: blue;
+  font-family: monospace
+    /* border: 2px solid black; */
+}
+
+.list {
+  background-color: black;
+  color: white;
+  margin-left: 5rem;
+  border-radius: 25px;
+
+  /* border: 2px solid blue; */
+}
+
+.points {
+  /* border: 2px solid blue; */
+  padding: 5px;
+  margin-left: 1rem;
+}
+
+
+.active {
+  color: orangered;
+}
+
+/* add note */
+input[type=text],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  float: right;
+  background-color: rgb(0, 64, 255);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px 20px;
+}
+
+/* Style the container */
+/* .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+} */
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+
+  .col-25,
+  .col-75,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.area {
+  height: 100px
+}
+
+.submitbutton {
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+.container-card {
+  display: flexbox;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 12.5rem;
+  min-height: 1.5;
+  max-height: 12.5rem;
+  /* margin: auto; */
+  /* text-align: center; */
+  font-family: arial;
+  border: 2px solid rgb(186, 35, 35);
+  min-height: 5rem;
+  overflow-wrap: break-word;
+  overflow: auto;
+  margin: 1rem;
+  float: left;
+  width: 25%;
+}
+
+.card-title {
+  font-family: monospace;
+  display: flexbox;
+  /* text-align: center; */
+  margin-top: 0px;
+  justify-content: center;
+  align-items: center;
+  overflow-wrap: break-word;
+  /* border: 2px solid black; */
+  font-size: 1.25rem;
+}
+
+.card-description {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flexbox;
+  font-size: 1rem;
+  /* border: 2px solid black; */
+}
+
+.your-notes {
+  font-size: 2rem;
+}
