@@ -93,12 +93,16 @@ label {
 /* Style the submit button */
 input[type=submit] {
   float: right;
-  background-color: rgb(0, 64, 255);
+  background-color: blue;
   border: none;
   color: white;
   border-radius: 4px;
   cursor: pointer;
   padding: 12px 20px;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(46, 79, 181);
 }
 
 /* Style the container */
@@ -184,4 +188,16 @@ input[type=submit] {
 
 .your-notes {
   font-size: 2rem;
+}
+
+.delete {
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  padding: .75rem;
+  color: white;
+}
+
+.delete:hover {
+  background-color: rgb(46, 79, 181);
 }

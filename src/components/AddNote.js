@@ -1,9 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { NoteContext } from '../context/NoteContext'
+import { useState } from 'react'
 
-function AddNote() {
+function AddNote({ notes, handleAddNote }) {
     const [note, setnote] = useState({ title: "", description: "" })
-    let { notes, setnotes } = useContext(NoteContext)
+    // let { notes, setnotes } = useContext(NoteContext)
     const submitHandler = (e) => {
         e.preventDefault()
         if (note.title.length < 5) {
@@ -14,7 +13,8 @@ function AddNote() {
             alert("Description has less than 10 characters")
             return
         }
-        setnotes([...notes, note])
+        handleAddNote(note)
+        // setnotes([...notes, note])
         setnote({ title: "", description: "" })
         alert("Added successfully")
     }
@@ -22,9 +22,9 @@ function AddNote() {
     const onChange = (e) => {
         setnote({ ...note, [e.target.name]: e.target.value })
     }
-    useEffect(() => {
-        setnotes([...notes])
-    }, [setnotes])
+    // useEffect(() => {
+    //     setnotes([...notes])
+    // }, [setnotes])
 
 
     return (

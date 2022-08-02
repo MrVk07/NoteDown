@@ -1,14 +1,14 @@
 import AddNote from './AddNote'
 import AllNotes from './AllNotes'
 
-function Home() {
+function Home({ notes, handleAddNote, handleDeleteNote }) {
     return (
         <>
-            <AddNote />
+            <AddNote notes={notes} handleAddNote={handleAddNote} />
             <div className='your-notes'>
                 <b>Your Notes:</b>
             </div>
-            <AllNotes />
+            <AllNotes notes={notes} handleDeleteNote={handleDeleteNote} />
         </>
     )
 }
