@@ -2,7 +2,6 @@ import { useState } from 'react'
 
 function AddNote({ notes, handleAddNote }) {
     const [note, setnote] = useState({ title: "", description: "" })
-    // let { notes, setnotes } = useContext(NoteContext)
     const submitHandler = (e) => {
         e.preventDefault()
         if (note.title.length < 5) {
@@ -14,7 +13,6 @@ function AddNote({ notes, handleAddNote }) {
             return
         }
         handleAddNote(note)
-        // setnotes([...notes, note])
         setnote({ title: "", description: "" })
         alert("Added successfully")
     }
@@ -22,10 +20,6 @@ function AddNote({ notes, handleAddNote }) {
     const onChange = (e) => {
         setnote({ ...note, [e.target.name]: e.target.value })
     }
-    // useEffect(() => {
-    //     setnotes([...notes])
-    // }, [setnotes])
-
 
     return (
         <div className="container">

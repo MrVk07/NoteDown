@@ -1,4 +1,3 @@
-// import React, { useContext, useEffect } from 'react'
 import Noteitem from './Noteitem'
 
 function AllNotes({ notes, handleDeleteNote }) {

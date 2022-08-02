@@ -201,3 +201,31 @@ input[type=submit]:hover {
 .delete:hover {
   background-color: rgb(46, 79, 181);
 }
+
+.search-box {
+  display: flex;
+  /* border: 3px solid green; */
+  align-items: center;
+  background-color: yellow;
+
+}
+
+.search-icon {
+  display: flex;
+  max-width: 2.25rem;
+  /* height: auto; */
+  /* border: 3px solid green; */
+}
+
+.searchtext {
+  outline: none;
+}
+
+.searchtext {
+  border-radius: 10px;
+  background-color: yellow;
+}
+
+/* .searchtext::placeholder {
+  color: black;
+} */
