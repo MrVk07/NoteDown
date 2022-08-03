@@ -1,7 +1,6 @@
 import { useState } from 'react'
 
-function AddNote({ notes, handleAddNote }) {
-    let ltitle = 0, ldesc = 0
+function AddNote({ handleAddNote }) {
     const [note, setnote] = useState({ title: "", description: "" })
     const submitHandler = (e) => {
         e.preventDefault()

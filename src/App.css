@@ -1,7 +1,6 @@
 body {
   /* background-image: linear-gradient(120deg, #f5cb42, #f08c70); */
-  background-color: rgb(205, 62, 62);
-  /* color: aqua */
+  background-color: rgb(238, 55, 55);
 }
 
 .navbar {
@@ -106,32 +105,15 @@ input[type=submit] {
   justify-content: center;
   font-size: 0.9rem;
   margin: 2px 5px 2px 0px;
-
-  /* margin-right: 1rem; */
-  /* font-size: 1rem; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
 }
-
-/* .submitbutton {} */
-
 
 input[type=submit]:hover {
   background-color: rgb(64, 69, 85);
 }
 
-/* Style the container */
-/* .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-} */
-
 .row {
   margin-right: 10px;
 }
-
 
 .col-25 {
   float: left;
