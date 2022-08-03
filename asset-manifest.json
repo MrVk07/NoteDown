@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/NoteDown/static/css/main.35ef585f.css",
+    "main.css": "/NoteDown/static/css/main.7d0e878c.css",
     "main.js": "/NoteDown/static/js/main.252cd88e.js",
     "index.html": "/NoteDown/index.html",
-    "main.35ef585f.css.map": "/NoteDown/static/css/main.35ef585f.css.map",
+    "main.7d0e878c.css.map": "/NoteDown/static/css/main.7d0e878c.css.map",
     "main.252cd88e.js.map": "/NoteDown/static/js/main.252cd88e.js.map"
   },
   "entrypoints": [
-    "static/css/main.35ef585f.css",
+    "static/css/main.7d0e878c.css",
     "static/js/main.252cd88e.js"
   ]
 }
