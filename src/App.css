@@ -72,8 +72,6 @@ body {
   color: orangered;
 }
 
-
-
 /* add note */
 input[type=text],
 textarea {
@@ -202,15 +200,7 @@ input[type=submit]:hover {
 .card-title {
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  justify-items: center;
-  text-align: center;
-  align-self: center;
-  align-content: center;
-  align-items: center; */
-  /* border: 2px solid black; */
-  margin-top: 5px;
-  margin-bottom: 0px;
+  margin: 5px 10px 1px 0px;
   text-align: center;
   font-size: 1.5rem;
 }
