@@ -11,12 +11,14 @@ function Home({ notes, handleAddNote, handleDeleteNote }) {
     return (
         <>
             <AddNote notes={notes} handleAddNote={handleAddNote} />
-            <div className="search-box">
-                <img className='search-icon' src="https://img.icons8.com/ios-filled/344/search.png" alt="search icon" />
-                <input type="text" className="searchtext" value={searchtext} name="searchtext" placeholder="search" onChange={onChange} />
-            </div>
             <div className='your-notes'>
-                <b>Your Notes:</b>
+                <div className="notes-search">
+                    <b style={{ marginBlockEnd: "2px" }}>Your Notes:</b>
+                    <div className="search-box">
+                        <img className='search-icon' src="https://img.icons8.com/ios-filled/344/search.png" alt="search icon" />
+                        <input type="text" className="searchtext" value={searchtext} name="searchtext" placeholder="search..." onChange={onChange} />
+                    </div>
+                </div>
                 <AllNotes notes={notes.filter((note) => note.title.includes(searchtext))} handleDeleteNote={handleDeleteNote} />
             </div>
         </>

@@ -1,6 +1,7 @@
 body {
   /* background-image: linear-gradient(120deg, #f5cb42, #f08c70); */
-  background-color: orange;
+  background-color: rgb(205, 62, 62);
+  /* color: aqua */
 }
 
 .navbar {
@@ -48,7 +49,7 @@ body {
   margin-top: 7rem;
   font-size: 3rem;
   justify-content: center;
-  color: blue;
+  color: yellow;
   font-family: monospace
     /* border: 2px solid black; */
 }
@@ -57,8 +58,7 @@ body {
   background-color: black;
   color: white;
   margin-left: 5rem;
-  border-radius: 25px;
-
+  border-radius: 20px;
   /* border: 2px solid blue; */
 }
 
@@ -73,13 +73,15 @@ body {
   color: orangered;
 }
 
+
+
 /* add note */
 input[type=text],
 textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 20px;
   box-sizing: border-box;
   resize: vertical;
 }
@@ -92,17 +94,31 @@ label {
 
 /* Style the submit button */
 input[type=submit] {
-  float: right;
-  background-color: blue;
-  border: none;
+  display: flex;
   color: white;
-  border-radius: 4px;
+  background-color: blue;
+  width: 7rem;
+  float: right;
+  border: none;
+  border-radius: 20px;
   cursor: pointer;
-  padding: 12px 20px;
+  padding: 0.8rem;
+  justify-content: center;
+  font-size: 0.9rem;
+  margin: 2px 5px 2px 0px;
+
+  /* margin-right: 1rem; */
+  /* font-size: 1rem; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
 }
 
+/* .submitbutton {} */
+
+
 input[type=submit]:hover {
-  background-color: rgb(46, 79, 181);
+  background-color: rgb(64, 69, 85);
 }
 
 /* Style the container */
@@ -111,6 +127,11 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 } */
+
+.row {
+  margin-right: 10px;
+}
+
 
 .col-25 {
   float: left;
@@ -144,76 +165,133 @@ input[type=submit]:hover {
   height: 100px
 }
 
-.submitbutton {
-  margin-right: 1rem;
-  font-size: 1rem;
+
+.your-notes {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  margin-left: 8px;
+  margin-top: 5px;
+  /* border: 2px solid black; */
+}
+
+
+.notes-search {
+  display: flex;
+  /* background-color: yellow; */
+  justify-content: space-between;
+}
+
+
+.search-box {
+  width: 35%;
+  border-radius: 20px;
+  margin-right: 2px;
 }
 
 .container-card {
-  display: flexbox;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 12.5rem;
-  min-height: 1.5;
-  max-height: 12.5rem;
-  /* margin: auto; */
-  /* text-align: center; */
-  font-family: arial;
-  border: 2px solid rgb(186, 35, 35);
-  min-height: 5rem;
-  overflow-wrap: break-word;
-  overflow: auto;
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+  font-size: 1.2rem;
+  /* border: 2px solid black; */
+  border-radius: 20px;
+  white-space: pre-wrap;
+  flex-wrap: wrap;
+  padding-left: 2px;
+  min-width: 12rem;
+  min-height: 11rem;
+  max-width: 20rem;
+  max-height: 25rem;
   float: left;
-  width: 25%;
+  align-items: center;
+  margin: 7px 7px 3px 7px;
+  justify-content: space-between;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .card-title {
-  font-family: monospace;
-  display: flexbox;
-  /* text-align: center; */
-  margin-top: 0px;
-  justify-content: center;
-  align-items: center;
-  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  justify-items: center;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  align-items: center; */
   /* border: 2px solid black; */
-  font-size: 1.25rem;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .card-description {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: flexbox;
-  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
   /* border: 2px solid black; */
+  float: left;
+
+  position: relative;
+  /* left: -20px; */
+  justify-content: flex-start;
+  justify-items: flex-start;
+  text-align: left;
+  align-self: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  flex-wrap: wrap;
 }
 
-.your-notes {
-  font-size: 2rem;
-}
 
 .delete {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 0.9rem;
+  margin: 2px 0px 2px 0px;
   background-color: blue;
   border: none;
-  border-radius: 5px;
-  padding: .75rem;
+  border-radius: 20px;
+  padding: 0.8rem;
   color: white;
+  cursor: pointer;
+  width: 5rem;
 }
 
 .delete:hover {
   background-color: rgb(46, 79, 181);
 }
 
-.search-box {
+.search-box,
+input[type=text],
+textarea {
   display: flex;
   /* border: 3px solid green; */
   align-items: center;
   background-color: yellow;
+  border: none;
+}
 
+.search-box,
+input[type=text],
+textarea:focus {
+  outline: yellowgreen;
 }
 
 .search-icon {
   display: flex;
   max-width: 2.25rem;
-  /* height: auto; */
   /* border: 3px solid green; */
 }
 
@@ -222,10 +300,5 @@ input[type=submit]:hover {
 }
 
 .searchtext {
-  border-radius: 10px;
   background-color: yellow;
 }
-
-/* .searchtext::placeholder {
-  color: black;
-} */
